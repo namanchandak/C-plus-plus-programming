@@ -1,0 +1,30 @@
+#include<iostream>
+template<class dt1,class dt2>
+class volt{
+    public :
+    dt1 a1;
+    dt2 b1;
+    volt(dt1 x,dt2 y)
+    {
+        a1=x;
+        b1=y;
+        }
+    void show()
+    {
+        std::cout<<a1<<" "<<b1<<" "<<"\n";
+        
+    }
+};
+int main ()
+{
+    volt<int,int>t1(100,200);
+    volt<int,char>t2(12,'v');
+    t1.show();
+    t2.show();
+ return 0;
+ }
+ 
+ /*
+ 100 200 
+12 v 
+ */
