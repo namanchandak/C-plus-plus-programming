@@ -1,0 +1,33 @@
+#include<iostream>
+class volt{
+    int a,b,c;
+    public :
+    void set(int x,int y,int z)
+    {
+        a=x;
+        b=y;
+        c=z;
+    }
+    friend void show(volt &m);
+    };
+    void show(volt &m)
+    {
+        std::cout<<m.a<<" "<<m.b<<" "<<m.c<<"\n";
+        
+    }
+int main ()
+{
+ volt m1;
+ volt m2;
+ m1.set(10,20,30);
+ m2.set(05,12,2002);
+ show(m1);
+ show(m2);
+ return 0;
+ }
+ 
+ /*
+ 10 20 30
+5 12 2002
+
+ */

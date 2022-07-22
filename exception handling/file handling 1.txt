@@ -1,0 +1,13 @@
+#include<iostream>
+int main ()
+{
+    char a[20];
+    std::ifstream fin;
+    fin.open("student.txt",fin::in);
+    std::cout<<"enter string";
+    std::cin>>a;
+    cout<<a;
+    fin.close();
+ return 0;
+ }
+ 

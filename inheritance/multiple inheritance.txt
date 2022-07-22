@@ -1,0 +1,39 @@
+#include<iostream>
+class A {
+public:
+ int show1()
+{
+    std::cout<<"hello a\n";
+}
+};
+class B
+{
+public :
+int show2()
+{
+    std::cout<<"hello B\n";
+}
+};
+class C: public B,public A
+{
+public :
+int show3()
+{
+    std::cout<<"hello c\n";
+}
+
+};
+int main ()
+{
+ 
+ C c1; 
+ c1.show2();
+ c1.show1();
+ c1.show3();
+ return 0;
+ }/*
+ hello B
+hello a
+hello c
+
+ */
