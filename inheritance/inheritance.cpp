@@ -1,0 +1,28 @@
+#include<iostream>
+#include<conio.h>
+class A {
+public:
+int show()
+{
+    std::cout<<"hello a\n";
+}
+};
+class B: public A
+public :
+{
+int display()
+{
+    std::cout<<"hello B";
+}
+
+};
+int main ()
+{
+ A a1();
+ B b1();
+ a1.show();
+ b1.show();
+ b1.display();
+ return 0;
+
+}

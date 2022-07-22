@@ -1,0 +1,13 @@
+#include<iostream>
+int main ()
+{
+    char a[20];
+    std::ofstream fout;
+    fout.open("student.txt",fout::out);
+    std::cout<<"enter string";
+    std::cin>>a;
+    fout<<a;
+    fout.close();
+ return 0;
+ }
+
