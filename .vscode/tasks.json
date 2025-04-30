@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run C++14",
+            "type": "shell",
+            "command": "/opt/homebrew/bin/g++-14 -std=c++14 -o ${workspaceFolder}/demo ${workspaceFolder}/demo.cpp && ${workspaceFolder}/demo < ${workspaceFolder}/input.txt > ${workspaceFolder}/output.txt",
+            "group": "build",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
