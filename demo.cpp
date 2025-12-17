@@ -1,11 +1,11 @@
-#include <iostream>
-#include <set>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <queue>
-#include <cmath>
-#include<bits/std.c++>
+// #include <iostream>
+// #include <set>
+// #include <vector>
+// #include <map>
+// #include <algorithm>
+// #include <queue>
+// #include <cmath>
+#include<bits/stdc++.h>
 #define ll long long int
 #define ve vector<ll>
 
@@ -18,7 +18,7 @@ void sol()
     cin>> n;
 
     vector<int>v;
-    v.push_back(3)
+    v.push_back(3);
 
     cout<< n << "naman" << v.back(); 
 }
